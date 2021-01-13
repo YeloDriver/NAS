@@ -2,6 +2,7 @@
     "Routers":{
         "R1":{
             "hostname":"Router1",
+            "ospf_process_id":"1",
             "router_id":"1.1.1.1",
             "ttl":"10",
             "label_range":"100 200",
@@ -13,6 +14,7 @@
                 {
                     "name":"GigabitEthernet1/0",
                     "status":"on",
+                    "network":"192.168.101.0 0.0.0.255",
                     "ip4":"192.168.101.2 255.255.255.0",
                     "area":"0",
                     "mtu": "2000"
@@ -20,6 +22,7 @@
                 {
                     "name":"GigabitEthernet2/0",
                     "status":"on",
+                    "network":"192.168.102.0 0.0.0.255",
                     "ip4":"192.168.102.1 255.255.255.0",
                     "area":"0",
                     "mtu": "2000"
@@ -31,6 +34,7 @@
         "R2":{
             "hostname":"Router2",
             "router_id":"2.2.2.2",
+            "ospf_process_id":"1",
             "ttl":"10",
             "label_range":"201 300",
             "Interfaces":[
@@ -41,6 +45,7 @@
                 {
                     "name":"GigabitEthernet1/0",
                     "status":"on",
+                    "network":"192.168.100.0 0.0.0.255",
                     "ip4":"192.168.100.1 255.255.255.0",
                     "area":"0",
                     "mtu": "2000"
@@ -48,6 +53,7 @@
                 {
                     "name":"GigabitEthernet 2/0",
                     "status":"on",
+                    "network":"192.168.101.0 0.0.0.255",
                     "ip4":"192.168.101.1 255.255.255.0",
                     "area":"0",
                     "mtu": "2000"
